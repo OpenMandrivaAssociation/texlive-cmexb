@@ -4,7 +4,7 @@ Release:	1
 Summary:	cmexb10 metrics and Type 1
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmexb
-License:	
+License:	distributable
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmexb.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmexb.doc.r%{version}.tar.xz
 BuildArch:	noarch
