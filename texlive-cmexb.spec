@@ -1,6 +1,6 @@
 Name:		texlive-cmexb
 Version:	54074
-Release:	1
+Release:	2
 Summary:	cmexb10 metrics and Type 1
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmexb
