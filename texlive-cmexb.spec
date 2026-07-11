@@ -12,8 +12,6 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cmexb.r%{tl_revi
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cmexb.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-BuildRequires:	texlive-tlpkg
-%texlive_base_requires
 Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
