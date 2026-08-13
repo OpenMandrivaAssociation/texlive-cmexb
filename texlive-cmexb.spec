@@ -12,9 +12,17 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cmexb.r%{tl_revi
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cmexb.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 Computer Modern Math Extension bold, metrics and .pfb file. Made by Petr
 Olsak via autotracing.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from cmexb:
+Map cmexb.map
+TL_DROPIN_EOF
